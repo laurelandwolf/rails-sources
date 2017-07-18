@@ -21,18 +21,21 @@ Before you can use your new source you need to create a source class. Follow the
 
   1. Make the file `app/sources/application_source.rb`.
   2. Copy this to that file:
-    ``` ruby
-    class ApplicationSource < Rails::Sources
 
-    end
-    ```
+  ``` ruby
+  class ApplicationSource < Rails::Sources
+
+  end
+  ```
+
   3. Now create the source file for your connection: `app/sources/authentication_source.rb`
   4. It will look something like this:
-    ``` ruby
-    class AuthenticationSource < ApplicationSource
 
-    end
-    ```
+  ``` ruby
+  class AuthenticationSource < ApplicationSource
+
+  end
+  ```
 
 Okay, we've got the start of our new source but we're not done yet. We need to define two fundamental concepts to every source object:
 
